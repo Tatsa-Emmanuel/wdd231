@@ -1,20 +1,19 @@
 @media (min-width: 768px) {
-    /* 1. Hide hamburger menu */
+    /* Hide hamburger menu */
     #menu-btn {
         display: none;
     }
 
-    /* 2. Horizontal navigation Tabs - Retaining Mobile Dynamism */
+    /* Horizontal navigation Tabs */
     nav {
-        /* Ensures the dark bar spans the entire screen width */
-        background-color: var(--primary-color); 
+        background-color: var(--primary-color);
     }
 
     #primary-nav {
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
-        background-color: var(--transparent); /* Changed from transparent */
+        background-color: var(--transparent); 
     }
 
     #primary-nav li {
@@ -24,39 +23,35 @@
     #primary-nav li a {
         padding: 1rem 2rem;
         text-align: center;
-        display: block; /* Makes the entire tab clickable, not just the text */
+        display: block;
     }
 
-    /* Restores the interactive tab highlight for desktop */
-    #primary-nav li a:hover, 
+    #primary-nav li a:hover,
     #primary-nav li a.active {
         background-color: var(--secondary-color);
         color: var(--text-light);
     }
 
-    /* Constrain main width so it doesn't stretch infinitely on huge monitors */
     main {
         max-width: 1000px;
         margin: 0 auto;
     }
 
-    /* 3. Top Row Layout: About Me (2/3) and Student Photo (1/3) */
     .top-row {
         display: grid;
-        grid-template-columns: 2fr 1fr; /* 2 fractions vs 1 fraction */
+        grid-template-columns: 2fr 1fr;
         gap: 20px;
         align-items: stretch;
     }
 
     .about-me, .student-photo {
-        margin-bottom: 0; 
+        margin-bottom: 0;
     }
 
     .certificate-courses {
         margin-top: 20px;
     }
 
-    /* 4. Filter Buttons Layout - Perfect 3 columns */
     .filter-buttons {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -64,9 +59,8 @@
         margin-bottom: 20px;
     }
 
-    /* 5. Course Cards Layout - Perfect 3 columns */
     .course-grid {
-        display: grid; /* Swapped from flexbox to grid for strict columns */
+        display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 20px;
     }
