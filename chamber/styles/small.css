@@ -1,11 +1,23 @@
 :root {
+    /* Brand Colors */
     --primary-color: #004d40; /* Deep Green */
+    --primary-dark: #00332a;  /* Darker Green for Nav */
     --secondary-color: #ffb300; /* Amber */
-    --bg-color: #f8f9fa;
-    --text-dark: #212121;
-    --text-light: #ffffff;
-    --font-heading: 'Montserrat', sans-serif;
-    --font-body: 'Open Sans', sans-serif;
+    
+    /* Backgrounds */
+    --bg-main: #f8f9fa;       /* Light Gray for page body */
+    --bg-card: #ffffff;       /* White for buttons/cards */
+    --bg-card-alt: #f1f1f1;   /* Off-white for card headers */
+    
+    /* Text Colors (Guaranteed 4.5:1+ Contrast) */
+    --text-dark: #111111;     /* Near Black for main text */
+    --text-muted: #444444;    /* Dark Gray for taglines */
+    --text-light: #ffffff;    /* Pure White for dark backgrounds */
+    
+    /* UI Elements */
+    --border-light: #cccccc;  
+    --border-nav: #ffffff1a;  /* Semi-transparent white for nav dividers */
+    --shadow-light: #0000001a; 
 }
 
 * {
@@ -50,13 +62,15 @@ header {
 }
 
 nav {
-    background-color: #00332a;
+    background-color: var(--primary-dark);
 }
 
 #primary-nav {
     display: none;
     flex-direction: column;
-    list-style: none;
+    list-style: none; 
+    margin: 0;        
+    padding: 0;       
 }
 
 #primary-nav.open {
@@ -91,11 +105,13 @@ h2 {
 }
 
 /* Toggle Buttons */
-.menu-controls {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-bottom: 2rem;
+.menu-controls button {
+    padding: 0.5rem 1.5rem;
+    border: 1px solid var(--border-light);
+    background-color: var(--bg-card); /* Replaces #fff */
+    color: var(--text-dark);
+    cursor: pointer;
+    font-weight: bold;
 }
 
 .menu-controls button {
@@ -114,13 +130,24 @@ h2 {
 
 /* Default Mobile Card Layout (Stack) */
 .member-card {
-    background-color: #fff;
-    border: 1px solid #ddd;
+    background-color: var(--bg-card-alt); 
+    border: 1px solid var(--border-light);
     border-radius: 8px;
-    padding: 1.5rem;
     margin-bottom: 1rem;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    overflow: hidden; 
+    box-shadow: 0 4px 6px var(--shadow-light);
+    padding: 1.5rem; /* Locks padding for all screen sizes */
+}
+
+.tagline {
+    font-size: 0.85rem;
+    color: var(--text-muted); /* Replaces #555 to ensure high contrast */
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid var(--border-light); /* Replaces #ccc */
+    margin: 0;
 }
 
 .member-card img {
@@ -153,10 +180,13 @@ h2 {
 .list-view .member-card {
     text-align: left;
 }
-.list-view .member-card img {
-    display: none; /* Hide images in mobile list view to save space */
-}
 
+.list-view .card-body img {
+    display: block; 
+    width: 80px; /* Locks the logo width for all screen sizes */
+    height: auto;
+    border-radius: 4px;
+}
 /* Footer */
 footer {
     background-color: var(--primary-color);
@@ -172,4 +202,91 @@ footer {
 .social-links img {
     filter: brightness(0) invert(1);
     margin: 0 10px;
+}
+
+/* --- Header Controls --- */
+.header-controls {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#dark-mode-toggle {
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* --- Member Card Layout (Wireframe Match) --- */
+.member-card {
+    background-color: #f1f1f1; /* Light gray background from wireframe */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    overflow: hidden; /* Keeps inner corners rounded */
+}
+
+.card-header {
+    padding: 1rem;
+    text-align: center;
+}
+
+.card-header h3 {
+    margin-bottom: 0.2rem;
+    font-size: 1.2rem; /* Locks the header font size */
+    color: var(--primary-color); 
+}
+
+.tagline {
+    font-size: 0.85rem;
+    color: #555;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 0;
+}
+
+.card-body {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: auto 1fr; /* Image left, text right */
+    gap: 15px;
+    align-items: center;
+    text-align: left;
+}
+
+.card-info p {
+    font-size: 0.8rem;
+    margin-bottom: 0.3rem;
+}
+
+.card-info strong {
+    font-size: 0.75rem;
+}
+
+.card-info a {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 5px;
+    font-size: 0.85rem;
+}
+
+/* --- Footer (Mobile) --- */
+.footer-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: left;
+}
+
+.footer-grid p {
+    font-size: 0.85rem;
+    margin-bottom: 0.2rem;
 }

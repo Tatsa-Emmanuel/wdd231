@@ -26,42 +26,28 @@ async function getMemberData() {
 }
 
 const displayMembers = (members) => {
-    directoryContainer.innerHTML = ''; // Clear container
+    directoryContainer.innerHTML = ''; 
 
     members.forEach((member) => {
         let card = document.createElement('section');
         card.classList.add('member-card');
 
-        let logo = document.createElement('img');
-        logo.src = `images/${member.image}`;
-        logo.alt = `${member.name} Logo`;
-        logo.loading = 'lazy';
-        logo.width = 150; 
-        logo.height = 150; 
-
-        let name = document.createElement('h3');
-        name.textContent = member.name;
-
-        let industry = document.createElement('p');
-        industry.innerHTML = `<strong>Industry:</strong> ${member.industry}`;
-
-        let address = document.createElement('p');
-        address.textContent = member.address;
-
-        let phone = document.createElement('p');
-        phone.textContent = member.phone;
-
-        let website = document.createElement('a');
-        website.href = member.website;
-        website.target = '_blank';
-        website.textContent = 'Visit Website';
-
-        card.appendChild(logo);
-        card.appendChild(name);
-        card.appendChild(industry);
-        card.appendChild(address);
-        card.appendChild(phone);
-        card.appendChild(website);
+        // Create the card interior matching the wireframe
+        card.innerHTML = `
+            <div class="card-header">
+                <h3>${member.name}</h3>
+                <p class="tagline">${member.industry}</p>
+            </div>
+            <hr>
+            <div class="card-body">
+                <img src="images/${member.image}" alt="${member.name} Logo" loading="lazy" width="75" height="75">
+                <div class="card-info">
+                    <p><strong>EMAIL:</strong> info@${member.website.replace('https://www.', '')}</p>
+                    <p><strong>PHONE:</strong> ${member.phone}</p>
+                    <p><strong>URL:</strong> <a href="${member.website}" target="_blank">${member.website.replace('https://www.', '')}</a></p>
+                </div>
+            </div>
+        `;
 
         directoryContainer.appendChild(card);
     });
