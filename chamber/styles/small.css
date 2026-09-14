@@ -16,8 +16,8 @@
     
     /* UI Elements */
     --border-light: #cccccc;  
-    --border-nav: #ffffff1a;  /* Semi-transparent white for nav dividers */
-    --shadow-light: #0000001a; 
+    --border-nav: #e6e6e6;  
+    --shadow-light: #cccccc; 
 }
 
 * {
@@ -51,14 +51,6 @@ header {
 .header-container h1 {
     font-family: var(--font-heading);
     font-size: 1.5rem;
-}
-
-#menu-btn {
-    background: transparent;
-    border: none;
-    color: var(--text-light);
-    font-size: 2rem;
-    cursor: pointer;
 }
 
 nav {
@@ -98,6 +90,12 @@ main {
     margin: 0 auto;
 }
 
+.main-title {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
 h2 {
     font-family: var(--font-heading);
     text-align: center;
@@ -126,17 +124,6 @@ h2 {
     background-color: var(--secondary-color);
     color: var(--text-dark);
     border-color: var(--secondary-color);
-}
-
-/* Default Mobile Card Layout (Stack) */
-.member-card {
-    background-color: var(--bg-card-alt); 
-    border: 1px solid var(--border-light);
-    border-radius: 8px;
-    margin-bottom: 1rem;
-    overflow: hidden; 
-    box-shadow: 0 4px 6px var(--shadow-light);
-    padding: 1.5rem; /* Locks padding for all screen sizes */
 }
 
 .tagline {
@@ -211,11 +198,34 @@ footer {
     gap: 15px;
 }
 
+.header-controls {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#menu-btn,
 #dark-mode-toggle {
-    background: transparent;
+    background-color: #00000000; /* Replaces 'transparent' */
     border: none;
-    font-size: 1.5rem;
+    color: var(--text-light);
+    font-size: 2rem;
     cursor: pointer;
+}
+
+#dark-mode-toggle {
+    font-size: 1.5rem;
+}
+
+/* --- Global Card Sizing & Colors --- */
+.member-card {
+    background-color: var(--bg-card-alt); 
+    border: 1px solid var(--border-light);
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    overflow: hidden; 
+    box-shadow: 0 4px 6px var(--shadow-light);
+    padding: 1.5rem; 
 }
 
 /* --- Member Card Layout (Wireframe Match) --- */
