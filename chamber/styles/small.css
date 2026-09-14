@@ -1,0 +1,175 @@
+:root {
+    --primary-color: #004d40; /* Deep Green */
+    --secondary-color: #ffb300; /* Amber */
+    --bg-color: #f8f9fa;
+    --text-dark: #212121;
+    --text-light: #ffffff;
+    --font-heading: 'Montserrat', sans-serif;
+    --font-body: 'Open Sans', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--bg-color);
+    color: var(--text-dark);
+}
+
+/* Header & Nav */
+header {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.header-container h1 {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+}
+
+#menu-btn {
+    background: transparent;
+    border: none;
+    color: var(--text-light);
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+nav {
+    background-color: #00332a;
+}
+
+#primary-nav {
+    display: none;
+    flex-direction: column;
+    list-style: none;
+}
+
+#primary-nav.open {
+    display: flex;
+}
+
+#primary-nav li a {
+    display: block;
+    padding: 1rem;
+    text-align: center;
+    color: var(--text-light);
+    text-decoration: none;
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+#primary-nav li a:hover, #primary-nav li a.active {
+    background-color: var(--secondary-color);
+    color: var(--text-dark);
+}
+
+/* Main Content */
+main {
+    padding: 2rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-family: var(--font-heading);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* Toggle Buttons */
+.menu-controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 2rem;
+}
+
+.menu-controls button {
+    padding: 0.5rem 1.5rem;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.menu-controls button.active-view {
+    background-color: var(--secondary-color);
+    color: var(--text-dark);
+    border-color: var(--secondary-color);
+}
+
+/* Default Mobile Card Layout (Stack) */
+.member-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.member-card img {
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.member-card h3 {
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+}
+
+.member-card p {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.member-card a {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+/* List View Specifics for Mobile */
+.list-view .member-card {
+    text-align: left;
+}
+.list-view .member-card img {
+    display: none; /* Hide images in mobile list view to save space */
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.social-links {
+    margin: 1rem 0;
+}
+
+.social-links img {
+    filter: brightness(0) invert(1);
+    margin: 0 10px;
+}

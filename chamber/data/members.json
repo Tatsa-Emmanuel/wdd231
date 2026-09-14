@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Bafoussam Agri-Trade",
+    "address": "12 Market Avenue, Bafoussam, West, Cameroon",
+    "phone": "+237 6 11 22 33 44",
+    "website": "https://www.bafoussamagri.cm",
+    "image": "bafoussam-agri.jpg",
+    "level": 3,
+    "industry": "Agriculture"
+  },
+  {
+    "name": "West Region Transit Co.",
+    "address": "45 Transport Blvd, Dschang, West, Cameroon",
+    "phone": "+237 6 22 33 44 55",
+    "website": "https://www.westtransit.cm",
+    "image": "west-transit.jpg",
+    "level": 2,
+    "industry": "Logistics"
+  },
+  {
+    "name": "Bamenda Highlands Coffee",
+    "address": "89 Highland Road, Bafoussam, West, Cameroon",
+    "phone": "+237 6 33 44 55 66",
+    "website": "https://www.highlandscoffee.cm",
+    "image": "highlands-coffee.jpg",
+    "level": 3,
+    "industry": "Food & Beverage"
+  },
+  {
+    "name": "Foumban Artisan Guild",
+    "address": "2 Royal Palace St, Foumban, West, Cameroon",
+    "phone": "+237 6 44 55 66 77",
+    "website": "https://www.foumbanartisans.cm",
+    "image": "foumban-artisan.jpg",
+    "level": 1,
+    "industry": "Arts & Crafts"
+  },
+  {
+    "name": "Cameroon Tech Hub - West",
+    "address": "10 Innovation Drive, Bafoussam, West, Cameroon",
+    "phone": "+237 6 55 66 77 88",
+    "website": "https://www.camtechwest.cm",
+    "image": "tech-hub.jpg",
+    "level": 3,
+    "industry": "Technology"
+  },
+  {
+    "name": "Dschang University Suppliers",
+    "address": "University Campus Road, Dschang, West, Cameroon",
+    "phone": "+237 6 66 77 88 99",
+    "website": "https://www.dschangsuppliers.cm",
+    "image": "dschang-suppliers.jpg",
+    "level": 2,
+    "industry": "Education Retail"
+  },
+  {
+    "name": "Noun Valley Bank",
+    "address": "55 Finance Square, Foumban, West, Cameroon",
+    "phone": "+237 6 77 88 99 00",
+    "website": "https://www.nounvalleybank.cm",
+    "image": "noun-bank.jpg",
+    "level": 3,
+    "industry": "Finance"
+  }
+]
