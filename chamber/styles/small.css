@@ -20,6 +20,15 @@
     --shadow-light: #cccccc; 
 }
 
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow-x: hidden; /* Strictly forbids horizontal scrolling */
+    max-width: 100vw;
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: var(--bg-main);
@@ -204,15 +213,12 @@ hr {
 }
 
 .list-view .card-body img {
-    display: block; 
-    width: 75px;
+    display: none; 
 }
 
 .list-view .card-body {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    gap: 15px;
-    align-items: center;
+    display: block; 
+    margin-top: 15px;
 }
 
 .list-view .card-info {

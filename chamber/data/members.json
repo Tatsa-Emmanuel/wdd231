@@ -4,7 +4,7 @@
     "address": "12 Market Avenue, Bafoussam, West, Cameroon",
     "phone": "+237 6 11 22 33 44",
     "website": "https://www.bafoussamagri.cm",
-    "image": "bafoussam-agri.jpg",
+    "image": "bafoussam-agri.webp",
     "level": 3,
     "industry": "Agriculture"
   },
@@ -13,7 +13,7 @@
     "address": "45 Transport Blvd, Dschang, West, Cameroon",
     "phone": "+237 6 22 33 44 55",
     "website": "https://www.westtransit.cm",
-    "image": "west-transit.jpg",
+    "image": "west-transit.webp",
     "level": 2,
     "industry": "Logistics"
   },
@@ -22,7 +22,7 @@
     "address": "89 Highland Road, Bafoussam, West, Cameroon",
     "phone": "+237 6 33 44 55 66",
     "website": "https://www.highlandscoffee.cm",
-    "image": "highlands-coffee.jpg",
+    "image": "highlands-coffee.webp",
     "level": 3,
     "industry": "Food & Beverage"
   },
@@ -31,7 +31,7 @@
     "address": "2 Royal Palace St, Foumban, West, Cameroon",
     "phone": "+237 6 44 55 66 77",
     "website": "https://www.foumbanartisans.cm",
-    "image": "foumban-artisan.jpg",
+    "image": "foumban-artisan.webp",
     "level": 1,
     "industry": "Arts & Crafts"
   },
@@ -40,7 +40,7 @@
     "address": "10 Innovation Drive, Bafoussam, West, Cameroon",
     "phone": "+237 6 55 66 77 88",
     "website": "https://www.camtechwest.cm",
-    "image": "tech-hub.jpg",
+    "image": "tech-hub.webp",
     "level": 3,
     "industry": "Technology"
   },
@@ -49,7 +49,7 @@
     "address": "University Campus Road, Dschang, West, Cameroon",
     "phone": "+237 6 66 77 88 99",
     "website": "https://www.dschangsuppliers.cm",
-    "image": "dschang-suppliers.jpg",
+    "image": "dschang-suppliers.webp",
     "level": 2,
     "industry": "Education Retail"
   },
@@ -58,7 +58,7 @@
     "address": "55 Finance Square, Foumban, West, Cameroon",
     "phone": "+237 6 77 88 99 00",
     "website": "https://www.nounvalleybank.cm",
-    "image": "noun-bank.jpg",
+    "image": "noun-bank.webp",
     "level": 3,
     "industry": "Finance"
   }
