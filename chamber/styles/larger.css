@@ -1,7 +1,7 @@
 @media (min-width: 768px) {
     /* === HEADER & NAVIGATION === */
     #menu-btn {
-        display: none; /* Hide hamburger menu */
+        display: none; 
     }
 
     #primary-nav {
@@ -21,14 +21,14 @@
         margin: 0 auto;
     }
 
-    /* === GRID VIEW (Desktop) === */
+    /* === DIRECTORY GRID VIEW (Desktop) === */
     .grid-view {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 20px;
     }
 
-    /* === LIST VIEW (Desktop Rows) === */
+    /* === DIRECTORY LIST VIEW (Desktop) === */
     .list-view {
         display: flex;
         flex-direction: column;
@@ -37,7 +37,7 @@
 
     .list-view .member-card {
         display: grid;
-        grid-template-columns: 1fr 2fr; /* Strict 2-column layout */
+        grid-template-columns: 1fr 2fr; 
         align-items: center;
         margin-bottom: 0;
     }
@@ -54,7 +54,7 @@
     }
 
     .list-view hr {
-        display: none; /* Hide horizontal divider */
+        display: none; 
     }
 
     .list-view .card-body {
@@ -67,7 +67,7 @@
     }
 
     .list-view .card-body img {
-        display: none;
+        display: none; 
     }
 
     .list-view .card-info {
@@ -75,6 +75,55 @@
         flex-direction: column; 
         text-align: left;
         gap: 5px;
+    }
+
+    /* === HOME PAGE GRID (Desktop Layout) === */
+    .home-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        grid-template-areas: 
+            "title title"
+            "hero hero"
+            "events weather"
+            "spotlights spotlights";
+        gap: 20px;
+    }
+    
+    .home-grid h1 {
+        grid-area: title;
+    }
+
+    .hero-container {
+        grid-area: hero;
+    }
+    
+    .hero-img {
+        height: 400px; 
+        object-fit: cover; 
+    }
+
+    .cta-button {
+        bottom: 40px;
+        font-size: 1.3rem;
+        padding: 15px 30px;
+    }
+
+    .events-section {
+        grid-area: events;
+    }
+
+    .weather-section {
+        grid-area: weather;
+    }
+
+    .spotlight-section {
+        grid-area: spotlights;
+    }
+
+    #spotlight-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 20px;
     }
 
     /* === FOOTER === */
@@ -94,53 +143,3 @@
         text-align: left; 
     }
 }
-
-/* =========================================
-       HOME PAGE SPECIFICS (Desktop Layout)
-       ========================================= */
-
-    .home-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr; /* Splits the middle section into 2 columns */
-        grid-template-areas: 
-            "hero hero"
-            "events weather"
-            "spotlights spotlights";
-        gap: 20px;
-    }
-
-    /* --- Desktop Hero Banner --- */
-    .hero-container {
-        grid-area: hero;
-    }
-    
-    .hero-img {
-        height: 400px; /* Locks height to create a panoramic banner */
-        object-fit: cover; /* Prevents the image from stretching/distorting */
-    }
-
-    .cta-button {
-        bottom: 40px;
-        font-size: 1.3rem;
-        padding: 15px 30px;
-    }
-
-    /* --- Desktop Middle Sections --- */
-    .events-section {
-        grid-area: events;
-    }
-
-    .weather-section {
-        grid-area: weather;
-    }
-
-    /* --- Desktop Spotlights --- */
-    .spotlight-section {
-        grid-area: spotlights;
-    }
-
-    #spotlight-container {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr); /* 3 cards side-by-side */
-        gap: 20px;
-    }
