@@ -94,3 +94,53 @@
         text-align: left; 
     }
 }
+
+/* =========================================
+       HOME PAGE SPECIFICS (Desktop Layout)
+       ========================================= */
+
+    .home-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Splits the middle section into 2 columns */
+        grid-template-areas: 
+            "hero hero"
+            "events weather"
+            "spotlights spotlights";
+        gap: 20px;
+    }
+
+    /* --- Desktop Hero Banner --- */
+    .hero-container {
+        grid-area: hero;
+    }
+    
+    .hero-img {
+        height: 400px; /* Locks height to create a panoramic banner */
+        object-fit: cover; /* Prevents the image from stretching/distorting */
+    }
+
+    .cta-button {
+        bottom: 40px;
+        font-size: 1.3rem;
+        padding: 15px 30px;
+    }
+
+    /* --- Desktop Middle Sections --- */
+    .events-section {
+        grid-area: events;
+    }
+
+    .weather-section {
+        grid-area: weather;
+    }
+
+    /* --- Desktop Spotlights --- */
+    .spotlight-section {
+        grid-area: spotlights;
+    }
+
+    #spotlight-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 3 cards side-by-side */
+        gap: 20px;
+    }
