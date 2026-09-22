@@ -229,6 +229,11 @@ hr {
 }
 
 /* --- HOME PAGE SPECIFICS --- */
+
+.home-title {
+    text-align: center;
+    color: var(--primary-dark);
+}
 .home-grid {
     display: flex;
     flex-direction: column;
