@@ -78,8 +78,7 @@
     }
 
     /* === HOME PAGE GRID (Desktop Layout) === */
-    .home-grid .home-title {
-        grid-column: 1 / -1;
+    .home-grid {
         display: grid;
         grid-template-columns: 1fr 1fr; 
         grid-template-areas: 
@@ -88,6 +87,10 @@
             "events weather"
             "spotlights spotlights";
         gap: 20px;
+    }
+    
+    .home-title {
+        grid-area: title;
     }
     
     .home-grid h1 {
