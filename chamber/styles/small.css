@@ -508,3 +508,146 @@ footer {
     display: flex;
     gap: 15px;
 }
+
+/* =========================================
+   JOIN PAGE SPECIFICS (Mobile First)
+   ========================================= */
+.join-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* --- Form Styling --- */
+.join-form fieldset {
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    background-color: var(--bg-card);
+}
+
+.join-form legend {
+    color: var(--primary-color);
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+.join-form label {
+    display: block;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+    color: var(--text-dark);
+}
+
+.join-form input[type="text"],
+.join-form input[type="email"],
+.join-form input[type="tel"],
+.join-form select,
+.join-form textarea {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 5px;
+    border: 1px solid var(--border-light);
+    border-radius: 4px;
+    font-family: inherit;
+}
+
+/* Styling for valid/invalid states (Accessibility visual cues) */
+.join-form input:required:valid {
+    border-left: 5px solid #28a745;
+}
+.join-form input:focus {
+    outline: 2px solid var(--primary-color);
+}
+
+.submit-btn {
+    background-color: var(--primary-dark);
+    color: var(--text-light);
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    width: 100%;
+    font-weight: bold;
+}
+
+.submit-btn:hover {
+    background-color: var(--secondary-color);
+    color: var(--text-dark);
+}
+
+/* --- Membership Cards & Page Load Animation --- */
+.membership-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Defines the animation called by the cards */
+@keyframes slideInFade {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.level-card {
+    background-color: var(--bg-card-alt);
+    border: 1px solid var(--border-light);
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 6px var(--shadow-light);
+    
+    /* Applies the animation on initial page load */
+    animation: slideInFade 0.8s ease-out forwards;
+    opacity: 0; /* Starts hidden until animation takes over */
+}
+
+/* Staggers the animation timing so they load one after another */
+#card-np { animation-delay: 0.1s; }
+#card-bronze { animation-delay: 0.3s; }
+#card-silver { animation-delay: 0.5s; }
+#card-gold { animation-delay: 0.7s; }
+
+.modal-btn {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* --- Modal/Dialog Styling --- */
+.membership-modal {
+    border: 1px solid var(--primary-color);
+    border-radius: 8px;
+    padding: 2rem;
+    max-width: 500px;
+    background-color: var(--bg-card);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* Darkens the background behind the modal */
+.membership-modal::backdrop {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.close-modal {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 15px;
+    cursor: pointer;
+    border-radius: 4px;
+}
