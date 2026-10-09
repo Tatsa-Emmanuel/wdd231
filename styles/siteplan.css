@@ -1,0 +1,102 @@
+/* =========================================
+   SITE PLAN STYLES
+   Applies the chosen colors and typography
+   ========================================= */
+
+:root {
+    /* Color Palette defined in Step 4 */
+    --primary-navy: #1A365D;
+    --bg-offwhite: #F8FAFC;
+    --accent-amber: #D97706;
+    --text-slate: #334155;
+
+    /* Typography defined in Step 5 */
+    --font-heading: 'Merriweather', serif;
+    --font-body: 'Open Sans', sans-serif;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--bg-offwhite);
+    color: var(--text-slate);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    font-family: var(--font-heading);
+    color: var(--primary-navy);
+}
+
+header {
+    background-color: var(--primary-navy);
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+header h1 {
+    color: white;
+    margin: 0;
+}
+
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+}
+
+.plan-section {
+    background-color: white;
+    border-top: 4px solid var(--accent-amber);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.plan-section h2 {
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 0.5rem;
+    margin-top: 0;
+}
+
+/* Color Palette Table Styling */
+.color-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.color-table th, .color-table td {
+    border: 1px solid #cbd5e1;
+    padding: 1rem;
+    text-align: left;
+}
+
+.color-table th {
+    background-color: var(--primary-navy);
+    color: white;
+}
+
+/* Wireframe Layout Styling */
+.wireframe-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.wireframe-box {
+    flex: 1;
+    min-width: 250px;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--primary-navy);
+    color: white;
+    margin-top: 3rem;
+}
