@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" width="100%" height="100%">
+    <!-- Modern Chat Bubble with Audio/Fluency Soundwave -->
+    <path d="M 10 36 L 10 16 Q 10 10 16 10 L 36 10 Q 42 10 42 16 L 42 36 Q 42 42 36 42 L 20 42 L 10 52 Z" fill="#D97706"/>
+    <rect x="18" y="22" width="3" height="10" rx="1.5" fill="#FFFFFF"/>
+    <rect x="25" y="16" width="3" height="22" rx="1.5" fill="#FFFFFF"/>
+    <rect x="32" y="22" width="3" height="10" rx="1.5" fill="#FFFFFF"/>
+
+    <!-- Contrasting Startup-Style Typography -->
+    <text x="52" y="37" font-family="system-ui, -apple-system, sans-serif" font-size="26" letter-spacing="-0.5">
+        <tspan font-weight="900" fill="#FFFFFF">Clear</tspan>
+        <tspan font-weight="300" fill="#FFFFFF">Speak</tspan>
+    </text>
+
+    <!-- 'Hub' Pill Badge -->
+    <rect x="188" y="15" width="46" height="24" rx="12" fill="#D97706"/>
+    <text x="211" y="32" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="bold" fill="#FFFFFF" text-anchor="middle" letter-spacing="1">HUB</text>
+</svg>

@@ -1,0 +1,17 @@
+[
+  {"title": "Beginner English", "language": "English", "duration": "45 mins", "description": "Basic daily speaking and vocabulary."},
+  {"title": "Pre Intermediate English", "language": "English", "duration": "50 mins", "description": "Expanded vocabulary and essential grammar structures."},
+  {"title": "Intermediate English", "language": "English", "duration": "60 mins", "description": "Conversational cadence and spontaneous discourse."},
+  {"title": "Advanced English", "language": "English", "duration": "60 mins", "description": "Fluent debate, complex discussions, and nuance."},
+  {"title": "Business English", "language": "English", "duration": "60 mins", "description": "Corporate presentations and professional negotiations."},
+  {"title": "English Job Interview Prep", "language": "English", "duration": "60 mins", "description": "Mock interviews and professional answers."},
+  {"title": "English for Travel", "language": "English", "duration": "45 mins", "description": "Essential vocabulary for airports, hotels, and tours."},
+  {"title": "IELTS Prep", "language": "English", "duration": "60 mins", "description": "Simulation tests with feedback."},
+  {"title": "English Grammar", "language": "English", "duration": "50 mins", "description": "Complex tenses in real-world scenarios."},
+  {"title": "Beginner French", "language": "French", "duration": "45 mins", "description": "Foundational speaking practice and greetings."},
+  {"title": "Pre Intermediate French", "language": "French", "duration": "50 mins", "description": "Building confidence with past and future tenses."},
+  {"title": "Intermediate French", "language": "French", "duration": "60 mins", "description": "Topical discussions on culture and daily life."},
+  {"title": "Advanced French", "language": "French", "duration": "60 mins", "description": "Fluent debate, idioms, and complex discussions."},
+  {"title": "French Travel Essentials", "language": "French", "duration": "45 mins", "description": "Practical phrases for tourists and expats."},
+  {"title": "DELF Prep", "language": "French", "duration": "60 mins", "description": "Oral exam certification drills."}
+]

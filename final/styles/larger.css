@@ -1,0 +1,19 @@
+@media (min-width: 768px) {
+    #menu-btn { display: none; }
+    #primary-nav { display: flex; flex-direction: row; position: static; width: auto; background: transparent; padding: 0; }
+    
+    .hero { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; max-width: 1200px; margin: 0 auto; text-align: left; }
+    .hero-btn { width: auto; }
+    
+    .dashboard-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; max-width: 1400px; margin: 0 auto; padding: 0 2rem; align-items: start; }
+    
+    .tutor-card { flex-direction: row; text-align: left; align-items: center; }
+    .tutor-avatar { flex-shrink: 0; }
+    
+    .preview-cards { flex-direction: row; }
+    .preview-card { flex: 1; }
+    
+    .course-grid { grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); }
+    
+    .footer-content { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; text-align: left; }
+}
