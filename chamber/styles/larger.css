@@ -201,6 +201,6 @@
         grid-template-areas:
             "palace-bafoussam palace-foumban waterfalls-metchie"
             "mount-bamboutos lake-baleng museum-bandjoun"
-            "hills-babadjou market-bafoussam market-bafoussam"; 
+            "hills-babadjou market-bafoussam ."; 
     }
 }
