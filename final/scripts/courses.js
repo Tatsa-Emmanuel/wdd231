@@ -11,7 +11,7 @@ async function getCourses() {
         displayCourses(allCourses);
     } catch (error) {
         console.error('Error:', error);
-        document.querySelector('#courses-container').innerHTML = '<p class="error-msg">Error loading courses.</p>';
+        document.querySelector('#courses-container').innerHTML = '<p>Error loading courses.</p>';
     }
 }
 
@@ -24,9 +24,9 @@ function displayCourses(courses) {
         card.className = 'course-card';
         card.innerHTML = `
             <h3>${course.title}</h3>
-            <p class="badge">${course.language}</p>
+            <p class="label-pill">${course.language}</p>
             <p>⏱ ${course.duration}</p>
-            <button class="details-btn btn-secondary">View Details</button>
+            <button class="details-btn btn-sub">View Details</button>
         `;
         card.querySelector('.details-btn').addEventListener('click', () => openCourseModal(course));
         container.appendChild(card);
