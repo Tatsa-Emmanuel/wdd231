@@ -1,0 +1,58 @@
+[
+    {
+        "id": "palace-bafoussam",
+        "name": "Bafoussam Chieftaincy Palace",
+        "address": "La Chefferie, Bafoussam",
+        "description": "The historical epicenter of Bafoussam, showcasing centuries-old architecture and royal art.",
+        "image": "bafoussam-palace.webp"
+    },
+    {
+        "id": "palace-foumban",
+        "name": "Foumban Royal Palace",
+        "address": "Place Royale, Foumban",
+        "description": "One of the oldest palaces in Africa, featuring the spectacular Palace Museum.",
+        "image": "foumban-palace.webp"
+    },
+    {
+        "id": "waterfalls-metchie",
+        "name": "Metchie Waterfalls",
+        "address": "Mbouda-Bafoussam Highway",
+        "description": "A spectacular natural cascade with deep cultural and historical significance.",
+        "image": "metchie-falls.webp"
+    },
+    {
+        "id": "mount-bamboutos",
+        "name": "Mount Bamboutos",
+        "address": "Bamboutos Range",
+        "description": "A gorgeous volcanic mountain offering breathtaking vistas and rugged hiking trails.",
+        "image": "mount-bamboutos.webp"
+    },
+    {
+        "id": "lake-baleng",
+        "name": "Lake Baleng Crater",
+        "address": "Baleng Outskirts",
+        "description": "An incredibly peaceful Crater Lake ensconced within thick, sacred forests.",
+        "image": "lake-baleng.webp"
+    },
+    {
+        "id": "museum-bandjoun",
+        "name": "Bandjoun Museum",
+        "address": "Route Nationale 4",
+        "description": "Features majestic thatched bamboo structures and a rich museum of royal artwork.",
+        "image": "bandjoun-museum.webp"
+    },
+    {
+        "id": "hills-babadjou",
+        "name": "Babadjou Highlands",
+        "address": "Babadjou Range",
+        "description": "Rolling mist-covered highlands and vibrant tea farms ideal for ecotourists.",
+        "image": "babadjou-hills.webp"
+    },
+    {
+        "id": "market-bafoussam",
+        "name": "Central Market",
+        "address": "Center-Ville, Bafoussam",
+        "description": "The economic heartbeat of the region, perfect for sourcing artisanal crafts.",
+        "image": "bafoussam-market.webp"
+    }
+]
